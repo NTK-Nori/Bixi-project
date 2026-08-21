@@ -1,4 +1,4 @@
-# 🚲 BIXI Montréal Analytics Project (2025)
+# BIXI Montréal Analytics Project (2025)
 
 ## Project Overview
 This project analyzes the 2025 BIXI trip dataset to understand urban mobility trends, peak rental hours, and user behavior across Montréal's bike-sharing network. The goal is to extract actionable insights for fleet optimization and business intelligence reporting.
@@ -16,13 +16,15 @@ Out of **14,386,222 raw trip records** in the 2025 dataset, **258,952 trips** we
 
 This left **14,127,270 cleaned records** for analysis. Derived new fields (`duration_sec`, `start_hour`, `day_of_week`, `month`, and `is_round_trip`) to prepare the dataset for exploratory analysis.
 
-## Key Insights (In Progress)
-* *Peak Usage Hours:* [To be added after Exploratory Data Analysis]
-* *Popular Routes / Stations:* [To be added after EDA]
-* *Average Trip Duration:* [To be added after EDA]
+## Key Insights (Phase 2 - EDA)
+* **Peak Usage Hours:** Distinct dual-peak demand during weekday commuter rush hours (~8:00 AM and ~5:00 PM).
+* **Popular Routes:** High-frequency trips heavily concentrate around major transit hubs, university campuses, and downtown corridors.
+* **Trip Duration & Behavior:** Point-to-point commuting dominates total volume (>95%), whereas round trips (same start/end station) exhibit the longest average ride durations. Weekends show higher recreational usage with longer overall ride times.
+
+* **Visualization / Reporting:** Matplotlib & Seaborn (`dark_background` theme), Tableau (Planned)
 
 ## Repository Structure
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -30,7 +32,8 @@ This left **14,127,270 cleaned records** for analysis. Derived new fields (`dura
 │   ├── raw/                # Original BIXI dataset
 │   └── processed/          # Cleaned dataset (bixi_2025_cleaned.csv)
 ├── notebooks/
-│   └── 01_data_acquisition_and_profiling.ipynb
+│   ├── 01_data_acquisition_and_profiling.ipynb
+│   └── 02_exploratory_data_analysis.ipynb
 ├── CHANGELOG.md            # Version history & detailed updates
 └── README.md               # Project overview
 ```
