@@ -38,4 +38,11 @@ All notable changes to the BIXI Montréal Analytics project will be documented i
 - Generated `tableau_station_summary.csv` with station locations (latitude, longitude, and borough) for mapping.
 - Generated `tableau_hourly_summary.csv` to track ride volumes and average trip lengths by hour of the day and day of the week.
 - Generated `tableau_bixi_2025_sample10pct.csv` using a fixed random seed (`random_state=404`) for consistent sampling.
----
+
+## [1.2.0] - 2026-08-26
+
+### Added
+- Created `03_tableau_data_prep.ipynb` to generate a 10% representative sample (~1M records) from the cleaned 2025 BIXI dataset.
+- Built and published an interactive 3 panel dashboard on Tableau Public covering station density, peak 24-hour demand, and top station volumes.
+- Implemented sorting by trip count on the station activity map to prevent high-volume hub occlusion.
+- Updated `README.md` with Tableau Public dashboard link, feature breakdown, and updated repository structure.
